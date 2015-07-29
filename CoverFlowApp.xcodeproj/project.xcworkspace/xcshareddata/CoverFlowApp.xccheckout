@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4144B424-3BA8-43C0-94C5-EE79C0BE0E31</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CoverFlowApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>47913F2BF7BFA5BDFDF8C0E148E63FD7270764BA</key>
+		<string>https://github.com/asthatrivedi/CoverFlowApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CoverFlowApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>47913F2BF7BFA5BDFDF8C0E148E63FD7270764BA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/asthatrivedi/CoverFlowApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>47913F2BF7BFA5BDFDF8C0E148E63FD7270764BA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>47913F2BF7BFA5BDFDF8C0E148E63FD7270764BA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CoverFlowApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
