@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E02BD4EB1B69DC4600D4F8A8 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02BD4EA1B69DC4600D4F8A8 /* CoreDataService.swift */; };
 		E0DFB88C1B6885A20035FB9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DFB88B1B6885A20035FB9C /* AppDelegate.swift */; };
 		E0DFB88F1B6885A20035FB9C /* CoverFlowApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E0DFB88D1B6885A20035FB9C /* CoverFlowApp.xcdatamodeld */; };
 		E0DFB8911B6885A20035FB9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DFB8901B6885A20035FB9C /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 		E0DFB8B21B68A4FC0035FB9C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DFB8B11B68A4FC0035FB9C /* NetworkService.swift */; };
 		E0DFB8B51B6976430035FB9C /* ResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DFB8B41B6976430035FB9C /* ResponseObject.swift */; };
 		E0DFB8B71B69B3880035FB9C /* UrlProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DFB8B61B69B3880035FB9C /* UrlProducer.swift */; };
+		E0DFB8BA1B69C3C60035FB9C /* ITunesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DFB8B91B69C3C60035FB9C /* ITunesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E02BD4EA1B69DC4600D4F8A8 /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		E0DFB8861B6885A20035FB9C /* CoverFlowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoverFlowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DFB88A1B6885A20035FB9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0DFB88B1B6885A20035FB9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 		E0DFB8B11B68A4FC0035FB9C /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		E0DFB8B41B6976430035FB9C /* ResponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseObject.swift; sourceTree = "<group>"; };
 		E0DFB8B61B69B3880035FB9C /* UrlProducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlProducer.swift; sourceTree = "<group>"; };
+		E0DFB8B91B69C3C60035FB9C /* ITunesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITunesService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 				E0DFB8951B6885A20035FB9C /* Images.xcassets */,
 				E0DFB8971B6885A20035FB9C /* LaunchScreen.xib */,
 				E0DFB88D1B6885A20035FB9C /* CoverFlowApp.xcdatamodeld */,
+				E0DFB8B81B69C3A90035FB9C /* Services */,
 				E0DFB8B01B68A2540035FB9C /* Model */,
 				E0DFB8B31B6976130035FB9C /* NetworkLayer */,
 				E0DFB8891B6885A20035FB9C /* Supporting Files */,
@@ -129,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				E0DFB8AE1B68A1DD0035FB9C /* AlbumInfo.swift */,
+				E02BD4EA1B69DC4600D4F8A8 /* CoreDataService.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -141,6 +147,14 @@
 				E0DFB8B61B69B3880035FB9C /* UrlProducer.swift */,
 			);
 			name = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		E0DFB8B81B69C3A90035FB9C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E0DFB8B91B69C3C60035FB9C /* ITunesService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,9 +260,11 @@
 				E0DFB8B21B68A4FC0035FB9C /* NetworkService.swift in Sources */,
 				E0DFB8B51B6976430035FB9C /* ResponseObject.swift in Sources */,
 				E0DFB8B71B69B3880035FB9C /* UrlProducer.swift in Sources */,
+				E0DFB8BA1B69C3C60035FB9C /* ITunesService.swift in Sources */,
 				E0DFB8911B6885A20035FB9C /* ViewController.swift in Sources */,
 				E0DFB88C1B6885A20035FB9C /* AppDelegate.swift in Sources */,
 				E0DFB88F1B6885A20035FB9C /* CoverFlowApp.xcdatamodeld in Sources */,
+				E02BD4EB1B69DC4600D4F8A8 /* CoreDataService.swift in Sources */,
 				E0DFB8AF1B68A1DD0035FB9C /* AlbumInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

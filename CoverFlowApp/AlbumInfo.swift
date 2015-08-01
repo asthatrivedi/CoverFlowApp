@@ -10,6 +10,16 @@ import Foundation
 import CoreData
 
 class AlbumInfo: NSManagedObject {
+    
+    // MARK: Album Info Keys
+    
+    static let artistIdKey = "artistId"
+    static let colectionIdKey = "collectionId"
+    static let trackIdKey = "trackId"
+    static let artistNameKey = "artistName"
+    static let collectionNameKey = "collectionName"
+    static let trackNameKey = "trackName"
+    static let trackImageUrlKey = "artworkUrl100"
 
     @NSManaged var artistId: NSNumber
     @NSManaged var collectionId: NSNumber
@@ -17,6 +27,22 @@ class AlbumInfo: NSManagedObject {
     @NSManaged var artistName: String
     @NSManaged var collectionName: String
     @NSManaged var trackName: String
-    @NSManaged var trackImage: NSData
-
+    @NSManaged var trackImageUrl: String
+    
+    
+    class func getAlbumInfoFromDictionary(albumInfoDict: NSDictionary, managedObjectContext: NSManagedObjectContext) -> AlbumInfo {
+        
+        let album = NSEntityDescription.insertNewObjectForEntityForName("AlbumInfo",
+                                                                        inManagedObjectContext: managedObjectContext) as! AlbumInfo
+        
+        album.artistId = albumInfoDict[artistIdKey] as! NSNumber
+        album.collectionId = albumInfoDict[colectionIdKey] as! NSNumber
+        album.trackId = albumInfoDict[trackIdKey] as! NSNumber
+        album.artistName = albumInfoDict[artistNameKey] as! String
+        album.collectionName = albumInfoDict[collectionNameKey] as! String
+        album.trackName = albumInfoDict[trackNameKey] as! String
+        album.trackImageUrl = albumInfoDict[trackImageUrlKey] as! String
+        
+        return album
+    }
 }

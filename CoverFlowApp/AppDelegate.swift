@@ -18,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        NSLog("test %@",NetworkService.sharedService.getDataForSearchTerm("Foo Fighters"))
+        ITunesService.sharedService.managedObjectContext = self.managedObjectContext
+        ITunesService.sharedService.loadArtistDataWithName("Foo Fighters")
         
         return true
     }
