@@ -19,13 +19,14 @@ class NetworkService: NSObject {
         return Static.instance
     }
     
-    // MARK: Get Data for Search Term
+    // MARK: Network Methods
     
     func getDataForSearchTerm (searchTerm: String) -> ResponseObject {
         let searchUrlString = UrlProducer.searchUrlForTerm(searchTerm)
         
         return self.getDatafromUrl(searchUrlString)
     }
+    
     
     // MARK: Network Helper Methods
  

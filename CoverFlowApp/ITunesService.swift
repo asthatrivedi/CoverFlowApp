@@ -52,4 +52,31 @@ class ITunesService: NSObject {
             NSLog("success")
         }
     }
+    
+    func getAlbumInfoFromCoreData() -> NSArray {
+        
+        var error: NSError?
+        var request: NSFetchRequest = NSFetchRequest(entityName: "AlbumInfo")
+        
+        var result: [AlbumInfo] = [AlbumInfo]()
+        
+        result = self.managedObjectContext!.executeFetchRequest(request, error: &error) as! [AlbumInfo]
+        
+        var albums: NSMutableArray = NSMutableArray()
+        
+        if (error == nil) {
+            
+            for fetchedObject in result {
+                albums.addObject(fetchedObject)
+            }
+        }
+        
+        return albums
+    }
+    
+    func getImageForUrl(url: NSString) -> UIImage? {
+        let response = NetworkService.sharedService.getDatafromUrl(url as String)
+        
+        return UIImage(data: response.responseData!)
+    }
 }
